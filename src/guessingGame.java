@@ -17,12 +17,12 @@ public class guessingGame {
 
             guess = sc.nextInt();
 
-            if (number == guess) {
-                System.out.println(("Good job, ") + player + ("!") + (" You guessed my number in") + gl + (" guesses!"));
+            if (guess == number) {
+                System.out.println(("Good job, ") + player + ("!") + (" You guessed my number in ") + gl + (" guesses!"));
                 break;
-            } else if (number > guess && i != gl - 1) {
+            } else if (guess > number && i != gl - 1) {
                 System.out.println("Your guess is too high.");
-            } else if (number < guess && i != gl - 1) {
+            } else if (guess < number && i != gl - 1) {
                 System.out.println("Your guess is too low.");
             }
         }
